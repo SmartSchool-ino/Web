@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<html lang='ko'>
+
+<head>
+
+<meta charset='utf-8' http-equiv='refresh' content='1'>
+<title>IoT</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nanum+Pen+Script&display=swap');
+.font {font-family: 'Nanum Pen Script'}
+.footer-font {font-size: 15px}
+.font-sizeup {font-family: 'Nanum Pen Script'; font-size: 23px;}
+.font매우나쁨 {font-family: 'Nanum Pen Script'; font-size: 23px; color: rgb(255, 38, 17);}
+.font나쁨 {font-family: 'Nanum Pen Script'; font-size: 23px; color: rgb(255, 104, 19);}
+.font보통 {font-family: 'Nanum Pen Script'; font-size: 23px; color: rgb(0, 210, 23);}
+.font좋음 {font-family: 'Nanum Pen Script'; font-size: 23px; color: rgb(0, 187, 255);}
+
+p {font-size: 20px}
+span {font-size: 20px}
+html, body {height: 100%; margin: 0;}
+div {height: 100%; margin: 0;}
+header {background-color: rgb(196, 255, 150); padding: 10px}
+footer {border:1px solid Black; height: 100px;}
+button {width:120px; height: 40px; color:#fff; background: rgb(196, 163, 255); font-size: 16px; border:none; border-radius: 20px; box-shadow: 0 4px 16px rgba(196, 163, 255, 0.3); transition: 0.3s; }
+button:focus{outline:0;}
+button:hover{background-color: rgba(196, 163, 255, 0.9); cursor: pointer; box-shadow: 0 2px 4px rgba(196, 163, 255, 0.6);}
+
+.container {background-color:#F0F0F0; width:960px; margin:0 auto; padding:10px;}
+.content {background-color:#F5F5F5; float:right; width:660px; height:400px; text-align: center;}
+.sideinfo { background-color:#DCDAD9; float:left; width:300px; height:400px; }
+.position {position: absolute; left: 35%; top: 50%}
+
+</style>
+
+</head>
+
+<body>
+<div class='container'>
+<header class='font'><h1>Internet of Things</h1><h3>SmartSchool.ino Team</h3></header>
+<div class='sideinfo'><br /><span class='font'>&nbsp;&nbsp;현재 상태 : </span> <!--if(value == HIGH) {client.print("<span class='font'>&nbsp;ON</span>} else {client.print("<span class='font'>&nbsp;OFF</span>}-->
+<br /><br /><span class='font'>&nbsp;&nbsp현재 시간 :&nbsp;&nbsp</span>
+<!--client.print (curTime);-->
+<br /><br /><span class='font'>&nbsp;&nbspPM2.5(초미세먼지) :&nbsp;&nbsp</span>
+<!--client.print (PM25_1);-->
+<span class='font'>㎍/㎥</span><br />
+<span class='font'>&nbsp;&nbsp초미세먼지 :&nbsp;&nbsp</span>
+<span class='font'><!--</span> if(0 < PM25 <= 15) {client.print("<span class='font좋음'>좋음</span>} else if(PM25 <= 35) {client.print("<span class='font보통'>보통</span>} else if(PM25 <= 75) {client.print("<span class='font나쁨'>나쁨</span>} else if(PM25 > 75){client.print("<span class='font매우나쁨'>매우나쁨</span>} else{client.print("<span class='font'>정보 없음</span>}-->
+<br /><br /><span class='font'>&nbsp;&nbspPM10(미세먼지) :&nbsp;&nbsp</span>
+<!--client.print (PM10_1);-->
+<span class='font'>㎍/㎥</span><br />
+<span class='font'>&nbsp;&nbsp미세먼지 :&nbsp;&nbsp</span>
+<span class='font'></span> <!--if(0 < PM10 <= 30) {client.print("<span class='font좋음'>좋음</span>} else if(PM10 <= 80) {client.print("<span class='font보통'>보통</span>} else if(PM10 <= 150) {client.print("<span class='font나쁨'>나쁨</span>} else if(PM10 > 150){client.print("<span class='font매우나쁨'>매우나쁨</span>} else{client.print("<span class='font'>정보 없음</span>}-->
+<br /><br /><span class='font'>&nbsp;&nbsp기준 :&nbsp;&nbsp</span>
+<!--client.print (hour06);-->
+<span class='font'>시</span><br /><br />
+<span class='font'>&nbsp;&nbsp온도 :&nbsp;&nbsp</span>
+<!--client.print (temp06);-->
+<span class='font'>℃</span><br /><br />
+<span class='font'>&nbsp;&nbsp날씨 :&nbsp;&nbsp</span>
+<!--client.print (wfKor06);-->
+<br /></div>
+
+<div class='content', 'postion'>
+<br /><br /><br/><br /><p class='font'>릴레이 : <a href=\"/LED=ON\"><button class='font-sizeup'>ON</button></a></p>
+<br /><br /><p class='font'>릴레이 : <a href=\"/LED=OFF\"><button class='font-sizeup'>OFF</button></a></p>
+</div>
+<footer><h5>© copyright 2021 by [SmartSchool.ino] 정규동아리</h5><p class='footer-font'>project of making students' school</p></footer>
+</div>
+</body>
+</html>
