@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@200&display=swap');
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+.main, .content{
+    height: 90%;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.main {
+    background-color: #D8EFF9;
+}
+
+
+.weather, .temp{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.weather {
+    margin: 9vh 0 0 0;
+    font-size: 4rem;
+}
+
+.temp {
+  margin: 1vh 0 6vh 0;
+  font-size: 6rem;
+}
+
+.main img {
+    width: 30vh;
+    height: 30vh;
+}
+
+.main span {
+    display: block;
+}
+
+
+
+
+.content {
+    background-color: #9cd0f0;
+}
+
+.content p {
+    margin: 0;
+    padding-top: 1vh;
+    font-size: 4vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content .PM1 {
+    padding-top: 5vh;
+}
+
+
+
+
+nav {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hahmlet', serif;
+    font-size: 3vw;
+    background-color: #ffffff;
+}
+
+nav div {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(82, 82, 82);
+}
+
+nav div a {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
